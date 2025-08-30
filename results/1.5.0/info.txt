@@ -1,0 +1,21 @@
+Kapper 1.5.0 Benchmark Results
+==================================================
+Generated automatically by benchmark pipeline
+
+JMH benchmark JAR: kapper-benchmark-1.5.0-jmh.jar (SHA-256: 0a2c5dcff9cc6dd9b1838c1364928faa03a593ae28bea982a892f1f45dc559f0)
+Kapper version: 1.5.0
+
+Java version:
+java version "21.0.2" 2024-01-16 LTS
+Java(TM) SE Runtime Environment Oracle GraalVM 21.0.2+13.1 (build 21.0.2+13-LTS-jvmci-23.1-b30)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 21.0.2+13.1 (build 21.0.2+13-LTS-jvmci-23.1-b30, mixed mode, sharing)
+
+System info:
+Date: 2025-12-26 18:40:30
+Hostname: kapper-benchmark-1-5-0-20251226-173512
+OS: Oracle Linux Server 8.9
+Kernel: 5.15.0-203.146.5.1.el8uek.aarch64
+Architecture: aarch64
+CPU Count: 4
+CPU: Neoverse-N1
+RAM: 22953 MB (22.4 GB)
