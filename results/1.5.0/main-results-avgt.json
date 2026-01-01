@@ -1,0 +1,3704 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 154.63802958884133,
+            "scoreError" : 2.1105196370461416,
+            "scoreConfidence" : [
+                152.5275099517952,
+                156.74854922588747
+            ],
+            "scorePercentiles" : {
+                "0.0" : 151.4482417312818,
+                "50.0" : 154.59734909102153,
+                "90.0" : 157.44616236519042,
+                "95.0" : 157.68484966887416,
+                "99.0" : 157.68484966887416,
+                "99.9" : 157.68484966887416,
+                "99.99" : 157.68484966887416,
+                "99.999" : 157.68484966887416,
+                "99.9999" : 157.68484966887416,
+                "100.0" : 157.68484966887416
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    151.4482417312818,
+                    155.25657518085006,
+                    152.26277989585554,
+                    152.6571733475805,
+                    152.55103874668214
+                ],
+                [
+                    153.74673566399164,
+                    154.1399063810111,
+                    154.67911665171528,
+                    153.80980168568703,
+                    154.59734909102153
+                ],
+                [
+                    155.37760395885772,
+                    157.08194912121306,
+                    157.28703749606794,
+                    157.68484966887416,
+                    156.99028521193094
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 449.11369196603323,
+            "scoreError" : 2.805746881745248,
+            "scoreConfidence" : [
+                446.307945084288,
+                451.91943884777845
+            ],
+            "scorePercentiles" : {
+                "0.0" : 446.2704116912093,
+                "50.0" : 447.79813127966327,
+                "90.0" : 453.21000378086256,
+                "95.0" : 453.41225816104463,
+                "99.0" : 453.41225816104463,
+                "99.9" : 453.41225816104463,
+                "99.99" : 453.41225816104463,
+                "99.999" : 453.41225816104463,
+                "99.9999" : 453.41225816104463,
+                "100.0" : 453.41225816104463
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    453.0751675274078,
+                    453.41225816104463,
+                    452.18474443841563,
+                    451.7592179962056,
+                    452.3238049751244
+                ],
+                [
+                    446.2704116912093,
+                    447.57714877437826,
+                    446.681997588209,
+                    447.559269936454,
+                    449.099723639303
+                ],
+                [
+                    446.98801859300977,
+                    446.66945591782047,
+                    448.01388226861394,
+                    447.29214670364075,
+                    447.79813127966327
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 164.20412004775724,
+            "scoreError" : 3.5928346719003805,
+            "scoreConfidence" : [
+                160.61128537585685,
+                167.79695471965763
+            ],
+            "scorePercentiles" : {
+                "0.0" : 160.86314872603268,
+                "50.0" : 162.36205458323863,
+                "90.0" : 169.42094986514016,
+                "95.0" : 169.85327406753177,
+                "99.0" : 169.85327406753177,
+                "99.9" : 169.85327406753177,
+                "99.99" : 169.85327406753177,
+                "99.999" : 169.85327406753177,
+                "99.9999" : 169.85327406753177,
+                "100.0" : 169.85327406753177
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    161.98554658546067,
+                    163.43937543309144,
+                    162.5923615139494,
+                    162.36205458323863,
+                    161.97960523502542
+                ],
+                [
+                    161.43053930589184,
+                    162.12611856823267,
+                    160.86314872603268,
+                    161.5039447692258,
+                    161.5091622468426
+                ],
+                [
+                    166.91497129218547,
+                    168.3303549907423,
+                    169.03860966869507,
+                    169.85327406753177,
+                    169.1327337302124
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 288.9240994752891,
+            "scoreError" : 2.3947530121224547,
+            "scoreConfidence" : [
+                286.52934646316663,
+                291.31885248741156
+            ],
+            "scorePercentiles" : {
+                "0.0" : 286.28109601511505,
+                "50.0" : 288.0797551090899,
+                "90.0" : 292.3113253033658,
+                "95.0" : 292.4012057189638,
+                "99.0" : 292.4012057189638,
+                "99.9" : 292.4012057189638,
+                "99.99" : 292.4012057189638,
+                "99.999" : 292.4012057189638,
+                "99.9999" : 292.4012057189638,
+                "100.0" : 292.4012057189638
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    292.2514050263004,
+                    292.2440619520748,
+                    292.4012057189638,
+                    291.05014313154834,
+                    291.0849260100128
+                ],
+                [
+                    287.7732041321363,
+                    288.0797551090899,
+                    288.8588910519323,
+                    286.90772446637595,
+                    286.41852471504666
+                ],
+                [
+                    287.41048298655016,
+                    286.28109601511505,
+                    288.0823722993605,
+                    287.00841705889104,
+                    288.00928245593826
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 409.12541270643567,
+            "scoreError" : 13.021204410142518,
+            "scoreConfidence" : [
+                396.10420829629317,
+                422.14661711657817
+            ],
+            "scorePercentiles" : {
+                "0.0" : 393.19850452150666,
+                "50.0" : 406.95557914869374,
+                "90.0" : 431.2021750542021,
+                "95.0" : 441.1097143613267,
+                "99.0" : 441.1097143613267,
+                "99.9" : 441.1097143613267,
+                "99.99" : 441.1097143613267,
+                "99.999" : 441.1097143613267,
+                "99.9999" : 441.1097143613267,
+                "100.0" : 441.1097143613267
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    407.96063645263933,
+                    411.10670730905207,
+                    412.57969653465346,
+                    406.95557914869374,
+                    441.1097143613267
+                ],
+                [
+                    420.4409519885647,
+                    404.6278606570643,
+                    400.53566020506247,
+                    393.43344940991346,
+                    393.19850452150666
+                ],
+                [
+                    404.52302095299734,
+                    407.0854271757714,
+                    404.33729303792353,
+                    424.5971488494523,
+                    404.38953999191267
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 131.0128492902828,
+            "scoreError" : 5.03421042488814,
+            "scoreConfidence" : [
+                125.97863886539464,
+                136.04705971517092
+            ],
+            "scorePercentiles" : {
+                "0.0" : 126.3928788958823,
+                "50.0" : 129.8385890265119,
+                "90.0" : 141.96940748490158,
+                "95.0" : 142.64211168482913,
+                "99.0" : 142.64211168482913,
+                "99.9" : 142.64211168482913,
+                "99.99" : 142.64211168482913,
+                "99.999" : 142.64211168482913,
+                "99.9999" : 142.64211168482913,
+                "100.0" : 142.64211168482913
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    129.8385890265119,
+                    130.8631045014394,
+                    142.64211168482913,
+                    141.5209380182832,
+                    128.52505197409008
+                ],
+                [
+                    130.07318250871444,
+                    128.0178243682634,
+                    128.7572509141474,
+                    128.24139318321707,
+                    126.3928788958823
+                ],
+                [
+                    130.87665505417996,
+                    131.83798671131385,
+                    129.98894210622092,
+                    129.74731638080905,
+                    127.86951402633935
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 401.8428500305942,
+            "scoreError" : 5.9356590316882265,
+            "scoreConfidence" : [
+                395.907190998906,
+                407.7785090622824
+            ],
+            "scorePercentiles" : {
+                "0.0" : 396.04387810866467,
+                "50.0" : 399.73097345910946,
+                "90.0" : 410.2030796543925,
+                "95.0" : 410.2438333743539,
+                "99.0" : 410.2438333743539,
+                "99.9" : 410.2438333743539,
+                "99.99" : 410.2438333743539,
+                "99.999" : 410.2438333743539,
+                "99.9999" : 410.2438333743539,
+                "100.0" : 410.2438333743539
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    397.01482064311233,
+                    398.1102345541401,
+                    399.73097345910946,
+                    398.61203013392856,
+                    397.043035093291
+                ],
+                [
+                    397.251507428299,
+                    396.04387810866467,
+                    397.25338245809166,
+                    399.8405569326723,
+                    400.9046135653011
+                ],
+                [
+                    407.88367762460234,
+                    407.4748276564537,
+                    410.2438333743539,
+                    410.05946891914056,
+                    410.1759105077516
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 128.87484936620456,
+            "scoreError" : 3.1259371927937405,
+            "scoreConfidence" : [
+                125.74891217341082,
+                132.0007865589983
+            ],
+            "scorePercentiles" : {
+                "0.0" : 123.03826481950836,
+                "50.0" : 128.7715513520474,
+                "90.0" : 132.5827310040937,
+                "95.0" : 133.2028231752797,
+                "99.0" : 133.2028231752797,
+                "99.9" : 133.2028231752797,
+                "99.99" : 133.2028231752797,
+                "99.999" : 133.2028231752797,
+                "99.9999" : 133.2028231752797,
+                "100.0" : 133.2028231752797
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    129.4757805282237,
+                    128.55403136569313,
+                    124.70647356344773,
+                    126.40178080287173,
+                    123.03826481950836
+                ],
+                [
+                    129.26455661548007,
+                    131.56106556686927,
+                    126.86074892807306,
+                    127.05169476064641,
+                    128.7715513520474
+                ],
+                [
+                    132.16933622330302,
+                    128.46570464763764,
+                    131.62911788243346,
+                    131.96981026155348,
+                    133.2028231752797
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 221.05194435428592,
+            "scoreError" : 3.551608792277304,
+            "scoreConfidence" : [
+                217.50033556200862,
+                224.60355314656323
+            ],
+            "scorePercentiles" : {
+                "0.0" : 215.65601669110671,
+                "50.0" : 220.73229695846024,
+                "90.0" : 226.7605807827305,
+                "95.0" : 228.25243983383547,
+                "99.0" : 228.25243983383547,
+                "99.9" : 228.25243983383547,
+                "99.99" : 228.25243983383547,
+                "99.999" : 228.25243983383547,
+                "99.9999" : 228.25243983383547,
+                "100.0" : 228.25243983383547
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    218.9278864273205,
+                    219.6655609102491,
+                    219.96656327805394,
+                    223.78873447010383,
+                    218.88212050776974
+                ],
+                [
+                    215.65601669110671,
+                    220.8446269322498,
+                    220.73229695846024,
+                    223.03454404745975,
+                    218.93135964797057
+                ],
+                [
+                    223.57743559132572,
+                    220.7618748785872,
+                    225.76600808199385,
+                    228.25243983383547,
+                    216.99169705780247
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.find100",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 389.1392113262334,
+            "scoreError" : 35.252615397663355,
+            "scoreConfidence" : [
+                353.88659592857005,
+                424.39182672389677
+            ],
+            "scorePercentiles" : {
+                "0.0" : 348.52002341789796,
+                "50.0" : 385.75430450547753,
+                "90.0" : 445.3291341471409,
+                "95.0" : 446.37608061060524,
+                "99.0" : 446.37608061060524,
+                "99.9" : 446.37608061060524,
+                "99.99" : 446.37608061060524,
+                "99.999" : 446.37608061060524,
+                "99.9999" : 446.37608061060524,
+                "100.0" : 446.37608061060524
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    358.45926501792115,
+                    363.4841133241259,
+                    387.46158744672607,
+                    349.02769428352065,
+                    348.52002341789796
+                ],
+                [
+                    402.93375793714745,
+                    382.80226113918235,
+                    385.75430450547753,
+                    371.0776293877551,
+                    352.1527639974646
+                ],
+                [
+                    446.37608061060524,
+                    422.7322965593034,
+                    444.6311698381647,
+                    411.29456621154793,
+                    410.3806562166598
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 10.91451529358579,
+            "scoreError" : 0.02642422607099841,
+            "scoreConfidence" : [
+                10.888091067514791,
+                10.940939519656789
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10.874528466353201,
+                "50.0" : 10.914830127022727,
+                "90.0" : 10.949786887492726,
+                "95.0" : 10.969412488016339,
+                "99.0" : 10.969412488016339,
+                "99.9" : 10.969412488016339,
+                "99.99" : 10.969412488016339,
+                "99.999" : 10.969412488016339,
+                "99.9999" : 10.969412488016339,
+                "100.0" : 10.969412488016339
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    10.895234666573698,
+                    10.907870772043184,
+                    10.874528466353201,
+                    10.874595566342832,
+                    10.912202339487582
+                ],
+                [
+                    10.922818512272485,
+                    10.925664095583127,
+                    10.934106027373895,
+                    10.936703153810317,
+                    10.969412488016339
+                ],
+                [
+                    10.914830127022727,
+                    10.90024445413324,
+                    10.924509408939858,
+                    10.929006933166635,
+                    10.896002392667716
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 21.635528259022283,
+            "scoreError" : 0.2171517606681749,
+            "scoreConfidence" : [
+                21.41837649835411,
+                21.852680019690457
+            ],
+            "scorePercentiles" : {
+                "0.0" : 21.40580327412678,
+                "50.0" : 21.564478496571354,
+                "90.0" : 21.910318520127372,
+                "95.0" : 21.932312287812195,
+                "99.0" : 21.932312287812195,
+                "99.9" : 21.932312287812195,
+                "99.99" : 21.932312287812195,
+                "99.999" : 21.932312287812195,
+                "99.9999" : 21.932312287812195,
+                "100.0" : 21.932312287812195
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    21.556464113883667,
+                    21.564478496571354,
+                    21.64052952530988,
+                    21.59063979014638,
+                    21.533922545553207
+                ],
+                [
+                    21.892547467370697,
+                    21.89383221532345,
+                    21.873770355043046,
+                    21.932312287812195,
+                    21.895656008337493
+                ],
+                [
+                    21.431963909903345,
+                    21.43844696076456,
+                    21.45028334870552,
+                    21.40580327412678,
+                    21.432273586482697
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 17.934048750586165,
+            "scoreError" : 0.04109200279331817,
+            "scoreConfidence" : [
+                17.892956747792848,
+                17.97514075337948
+            ],
+            "scorePercentiles" : {
+                "0.0" : 17.867505731641952,
+                "50.0" : 17.93722901420577,
+                "90.0" : 17.97991791250276,
+                "95.0" : 17.99724043753217,
+                "99.0" : 17.99724043753217,
+                "99.9" : 17.99724043753217,
+                "99.99" : 17.99724043753217,
+                "99.999" : 17.99724043753217,
+                "99.9999" : 17.99724043753217,
+                "100.0" : 17.99724043753217
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    17.93722901420577,
+                    17.92450607082812,
+                    17.968369562483154,
+                    17.96771715375024,
+                    17.936919464074325
+                ],
+                [
+                    17.867505731641952,
+                    17.884918318876867,
+                    17.873552594610246,
+                    17.903978859698437,
+                    17.91432076154444
+                ],
+                [
+                    17.96238511416378,
+                    17.95461893784337,
+                    17.962624418930474,
+                    17.99724043753217,
+                    17.95484481860913
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 14.475271706351839,
+            "scoreError" : 0.09977719222754884,
+            "scoreConfidence" : [
+                14.37549451412429,
+                14.575048898579388
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14.318093033311476,
+                "50.0" : 14.503904145588713,
+                "90.0" : 14.564502509513009,
+                "95.0" : 14.570333530507048,
+                "99.0" : 14.570333530507048,
+                "99.9" : 14.570333530507048,
+                "99.99" : 14.570333530507048,
+                "99.999" : 14.570333530507048,
+                "99.9999" : 14.570333530507048,
+                "100.0" : 14.570333530507048
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    14.351222044274532,
+                    14.318093033311476,
+                    14.39465985830548,
+                    14.3347681190997,
+                    14.38637226558791
+                ],
+                [
+                    14.553761424363437,
+                    14.552538085647596,
+                    14.570333530507048,
+                    14.560615162183648,
+                    14.553594340583697
+                ],
+                [
+                    14.547178753054812,
+                    14.456011662734758,
+                    14.55625354716256,
+                    14.489769622872245,
+                    14.503904145588713
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 173.59478213555943,
+            "scoreError" : 39.68490957269117,
+            "scoreConfidence" : [
+                133.90987256286826,
+                213.2796917082506
+            ],
+            "scorePercentiles" : {
+                "0.0" : 127.55573678571429,
+                "50.0" : 175.51531573589807,
+                "90.0" : 236.31425161967263,
+                "95.0" : 276.3055245295158,
+                "99.0" : 276.3055245295158,
+                "99.9" : 276.3055245295158,
+                "99.99" : 276.3055245295158,
+                "99.999" : 276.3055245295158,
+                "99.9999" : 276.3055245295158,
+                "100.0" : 276.3055245295158
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    182.7797219358848,
+                    155.29623669171997,
+                    175.51531573589807,
+                    276.3055245295158,
+                    209.65340301311048
+                ],
+                [
+                    187.48624979377578,
+                    163.05122385626242,
+                    127.55573678571429,
+                    129.29524885579087,
+                    132.49003765235824
+                ],
+                [
+                    188.1392249313316,
+                    175.42953166333368,
+                    176.27007794267988,
+                    177.6157353296391,
+                    147.03846331637604
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 58.57254122879378,
+            "scoreError" : 1.616588382271811,
+            "scoreConfidence" : [
+                56.95595284652197,
+                60.189129611065596
+            ],
+            "scorePercentiles" : {
+                "0.0" : 55.82658464613083,
+                "50.0" : 58.87950056522456,
+                "90.0" : 60.45562584024271,
+                "95.0" : 61.04948716195592,
+                "99.0" : 61.04948716195592,
+                "99.9" : 61.04948716195592,
+                "99.99" : 61.04948716195592,
+                "99.999" : 61.04948716195592,
+                "99.9999" : 61.04948716195592,
+                "100.0" : 61.04948716195592
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    56.61633419386981,
+                    57.225847223493865,
+                    55.82658464613083,
+                    57.32531850960161,
+                    57.0424671678569
+                ],
+                [
+                    58.87950056522456,
+                    58.90132529566979,
+                    58.11076066290124,
+                    59.936278178004194,
+                    60.05971829243391
+                ],
+                [
+                    61.04948716195592,
+                    59.73480935883499,
+                    59.78040201810074,
+                    59.77353854062066,
+                    58.32574661720791
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 71.38137371131376,
+            "scoreError" : 1.37654063447512,
+            "scoreConfidence" : [
+                70.00483307683864,
+                72.75791434578888
+            ],
+            "scorePercentiles" : {
+                "0.0" : 68.2389432412146,
+                "50.0" : 71.84414675709073,
+                "90.0" : 72.86012486669296,
+                "95.0" : 72.96353016882871,
+                "99.0" : 72.96353016882871,
+                "99.9" : 72.96353016882871,
+                "99.99" : 72.96353016882871,
+                "99.999" : 72.96353016882871,
+                "99.9999" : 72.96353016882871,
+                "100.0" : 72.96353016882871
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    72.67555434435046,
+                    72.00079558217895,
+                    70.77974647528453,
+                    70.95004953459333,
+                    71.39335746309146
+                ],
+                [
+                    70.87601087187629,
+                    72.18486883021265,
+                    69.5304731345774,
+                    72.14078349756893,
+                    68.2389432412146
+                ],
+                [
+                    72.79118799860245,
+                    71.84414675709073,
+                    71.89551605342996,
+                    72.96353016882871,
+                    70.45564171680593
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 60.931604907420166,
+            "scoreError" : 2.709111623287469,
+            "scoreConfidence" : [
+                58.222493284132696,
+                63.640716530707635
+            ],
+            "scorePercentiles" : {
+                "0.0" : 57.70754976976076,
+                "50.0" : 61.59049527622098,
+                "90.0" : 64.31221165092096,
+                "95.0" : 64.52594435554639,
+                "99.0" : 64.52594435554639,
+                "99.9" : 64.52594435554639,
+                "99.99" : 64.52594435554639,
+                "99.999" : 64.52594435554639,
+                "99.9999" : 64.52594435554639,
+                "100.0" : 64.52594435554639
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    64.16972318117067,
+                    64.52594435554639,
+                    63.37704115544514,
+                    62.46829592474139,
+                    63.5152924738012
+                ],
+                [
+                    57.70754976976076,
+                    62.127331225227685,
+                    61.59049527622098,
+                    58.030881774713926,
+                    62.78113830121163
+                ],
+                [
+                    58.49477772578381,
+                    58.063056539359245,
+                    59.889553707030785,
+                    59.458067399162864,
+                    57.77492480212606
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 67.955503671701,
+            "scoreError" : 1.5961850188704771,
+            "scoreConfidence" : [
+                66.35931865283052,
+                69.55168869057147
+            ],
+            "scorePercentiles" : {
+                "0.0" : 66.09330584378677,
+                "50.0" : 67.33944281789533,
+                "90.0" : 70.31539169021669,
+                "95.0" : 71.82321374912021,
+                "99.0" : 71.82321374912021,
+                "99.9" : 71.82321374912021,
+                "99.99" : 71.82321374912021,
+                "99.999" : 71.82321374912021,
+                "99.9999" : 71.82321374912021,
+                "100.0" : 71.82321374912021
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    67.62192267016486,
+                    66.09330584378677,
+                    66.46197582178034,
+                    67.33944281789533,
+                    66.90040683159177
+                ],
+                [
+                    69.11567957702675,
+                    67.63100534267512,
+                    67.22562709904678,
+                    67.23085645521284,
+                    66.89008184396404
+                ],
+                [
+                    71.82321374912021,
+                    69.10935383467168,
+                    69.26798398581442,
+                    67.31152221848286,
+                    69.310176984281
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.findById",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 1181.5829015024185,
+            "scoreError" : 3241.549324135937,
+            "scoreConfidence" : [
+                -2059.966422633518,
+                4423.1322256383555
+            ],
+            "scorePercentiles" : {
+                "0.0" : 208.37861935322553,
+                "50.0" : 399.0131785543322,
+                "90.0" : 5239.642345928253,
+                "95.0" : 12134.56850795334,
+                "99.0" : 12134.56850795334,
+                "99.9" : 12134.56850795334,
+                "99.99" : 12134.56850795334,
+                "99.999" : 12134.56850795334,
+                "99.9999" : 12134.56850795334,
+                "100.0" : 12134.56850795334
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    208.89478831933826,
+                    334.732983531932,
+                    12134.56850795334,
+                    530.6790622612018,
+                    415.420454756207
+                ],
+                [
+                    208.37861935322553,
+                    526.8022163400357,
+                    393.28056129933634,
+                    343.9196333998212,
+                    353.27279274986427
+                ],
+                [
+                    404.59387918329753,
+                    643.0249045781893,
+                    445.9660008645284,
+                    399.0131785543322,
+                    381.19593939162917
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 13.413476420657474,
+            "scoreError" : 0.2294195161446864,
+            "scoreConfidence" : [
+                13.184056904512788,
+                13.64289593680216
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13.091264391469975,
+                "50.0" : 13.363259832376555,
+                "90.0" : 13.719467428335673,
+                "95.0" : 13.7556764851526,
+                "99.0" : 13.7556764851526,
+                "99.9" : 13.7556764851526,
+                "99.99" : 13.7556764851526,
+                "99.999" : 13.7556764851526,
+                "99.9999" : 13.7556764851526,
+                "100.0" : 13.7556764851526
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    13.091264391469975,
+                    13.332750562624657,
+                    13.320506739908785,
+                    13.539069180176057,
+                    13.363259832376555
+                ],
+                [
+                    13.503764814224681,
+                    13.7556764851526,
+                    13.664877421012214,
+                    13.659071385449192,
+                    13.695328057124389
+                ],
+                [
+                    13.118389983786422,
+                    13.166867960648624,
+                    13.356533627878898,
+                    13.24792189810031,
+                    13.386863969928758
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 14.77184216181101,
+            "scoreError" : 0.2099404162386961,
+            "scoreConfidence" : [
+                14.561901745572314,
+                14.981782578049707
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14.531669578712423,
+                "50.0" : 14.729799279448068,
+                "90.0" : 15.150573800678957,
+                "95.0" : 15.191473377832736,
+                "99.0" : 15.191473377832736,
+                "99.9" : 15.191473377832736,
+                "99.99" : 15.191473377832736,
+                "99.999" : 15.191473377832736,
+                "99.9999" : 15.191473377832736,
+                "100.0" : 15.191473377832736
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    14.55148299274194,
+                    14.612065360775937,
+                    14.659226199306348,
+                    14.662955613684217,
+                    14.73209222610156
+                ],
+                [
+                    14.729799279448068,
+                    14.531669578712423,
+                    14.62075051024287,
+                    14.727818683082724,
+                    14.800197372783026
+                ],
+                [
+                    14.765138572023375,
+                    14.9041333971212,
+                    14.965521847398934,
+                    15.191473377832736,
+                    15.123307415909771
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 14.98495663294192,
+            "scoreError" : 0.16958773918688214,
+            "scoreConfidence" : [
+                14.815368893755037,
+                15.154544372128802
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14.688522214127504,
+                "50.0" : 14.982025801135597,
+                "90.0" : 15.22821650389618,
+                "95.0" : 15.266558994776036,
+                "99.0" : 15.266558994776036,
+                "99.9" : 15.266558994776036,
+                "99.99" : 15.266558994776036,
+                "99.999" : 15.266558994776036,
+                "99.9999" : 15.266558994776036,
+                "100.0" : 15.266558994776036
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    14.817442246600997,
+                    15.010581852841403,
+                    14.967837709766451,
+                    15.266558994776036,
+                    15.125535005142478
+                ],
+                [
+                    14.688522214127504,
+                    14.817257652131396,
+                    14.982025801135597,
+                    14.96425525228946,
+                    15.063340061396083
+                ],
+                [
+                    14.820369576686645,
+                    14.890441338070323,
+                    15.096586482896047,
+                    15.06094046295878,
+                    15.202654843309608
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 58.745896377743264,
+            "scoreError" : 6.570590695395891,
+            "scoreConfidence" : [
+                52.17530568234737,
+                65.31648707313916
+            ],
+            "scorePercentiles" : {
+                "0.0" : 49.45208742780283,
+                "50.0" : 59.502631216307876,
+                "90.0" : 67.0317174384478,
+                "95.0" : 67.82907397007556,
+                "99.0" : 67.82907397007556,
+                "99.9" : 67.82907397007556,
+                "99.99" : 67.82907397007556,
+                "99.999" : 67.82907397007556,
+                "99.9999" : 67.82907397007556,
+                "100.0" : 67.82907397007556
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    51.40187351583622,
+                    53.36286578728309,
+                    59.95469021211286,
+                    65.05087358520022,
+                    66.50014641736263
+                ],
+                [
+                    51.34210562577651,
+                    55.12956560567138,
+                    59.502631216307876,
+                    63.412185258458884,
+                    67.82907397007556
+                ],
+                [
+                    49.45208742780283,
+                    53.49561392716535,
+                    56.91019569547353,
+                    63.232777378724265,
+                    64.61176004289794
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 162.04228703594563,
+            "scoreError" : 2.565039461233512,
+            "scoreConfidence" : [
+                159.47724757471212,
+                164.60732649717914
+            ],
+            "scorePercentiles" : {
+                "0.0" : 158.20415569828515,
+                "50.0" : 162.28167409859475,
+                "90.0" : 165.28919052423493,
+                "95.0" : 165.49906649455534,
+                "99.0" : 165.49906649455534,
+                "99.9" : 165.49906649455534,
+                "99.99" : 165.49906649455534,
+                "99.999" : 165.49906649455534,
+                "99.9999" : 165.49906649455534,
+                "100.0" : 165.49906649455534
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    164.29916228560162,
+                    161.74516222423497,
+                    165.149273210688,
+                    162.28167409859475,
+                    158.7740483281999
+                ],
+                [
+                    161.24749513060303,
+                    158.20415569828515,
+                    162.4493328460039,
+                    162.51318200728028,
+                    163.06267988520742
+                ],
+                [
+                    164.96293015736862,
+                    158.35689941727895,
+                    165.49906649455534,
+                    162.08817063762197,
+                    160.00107311766024
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 69.95085396101652,
+            "scoreError" : 2.5112106758716783,
+            "scoreConfidence" : [
+                67.43964328514484,
+                72.4620646368882
+            ],
+            "scorePercentiles" : {
+                "0.0" : 65.86568630705395,
+                "50.0" : 69.9780885044924,
+                "90.0" : 73.81410447870678,
+                "95.0" : 74.34607136909717,
+                "99.0" : 74.34607136909717,
+                "99.9" : 74.34607136909717,
+                "99.99" : 74.34607136909717,
+                "99.999" : 74.34607136909717,
+                "99.9999" : 74.34607136909717,
+                "100.0" : 74.34607136909717
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    69.09722400331653,
+                    66.91368755185611,
+                    70.37103730912673,
+                    70.4019944807389,
+                    67.39520832434764
+                ],
+                [
+                    70.67583332391021,
+                    69.76740984247024,
+                    69.9780885044924,
+                    68.046359239552,
+                    65.86568630705395
+                ],
+                [
+                    70.5522516085337,
+                    69.71026009368727,
+                    72.68223757195186,
+                    73.45945988511319,
+                    74.34607136909717
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 72.14140759499917,
+            "scoreError" : 2.846271250288348,
+            "scoreConfidence" : [
+                69.29513634471081,
+                74.98767884528752
+            ],
+            "scorePercentiles" : {
+                "0.0" : 66.6073758225656,
+                "50.0" : 72.04042737973462,
+                "90.0" : 76.56282739982773,
+                "95.0" : 76.88092596635813,
+                "99.0" : 76.88092596635813,
+                "99.9" : 76.88092596635813,
+                "99.99" : 76.88092596635813,
+                "99.999" : 76.88092596635813,
+                "99.9999" : 76.88092596635813,
+                "100.0" : 76.88092596635813
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    71.78514874739788,
+                    71.8507171329626,
+                    71.15768231108581,
+                    73.6622,
+                    72.95733068752189
+                ],
+                [
+                    69.77977413232483,
+                    69.8218073979948,
+                    72.04042737973462,
+                    69.41188920971167,
+                    66.6073758225656
+                ],
+                [
+                    72.21935326997516,
+                    73.37325932176032,
+                    74.22246085678661,
+                    76.35076168880745,
+                    76.88092596635813
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 73.74353806037804,
+            "scoreError" : 1.5108816971382122,
+            "scoreConfidence" : [
+                72.23265636323983,
+                75.25441975751626
+            ],
+            "scorePercentiles" : {
+                "0.0" : 71.51864897375384,
+                "50.0" : 73.55793138754855,
+                "90.0" : 76.29175949393779,
+                "95.0" : 76.6994757485581,
+                "99.0" : 76.6994757485581,
+                "99.9" : 76.6994757485581,
+                "99.99" : 76.6994757485581,
+                "99.999" : 76.6994757485581,
+                "99.9999" : 76.6994757485581,
+                "100.0" : 76.6994757485581
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    74.80027978817299,
+                    73.55793138754855,
+                    74.21059948945518,
+                    76.6994757485581,
+                    73.52839513852126
+                ],
+                [
+                    71.96020354033244,
+                    71.51864897375384,
+                    73.6578531465441,
+                    74.49306829253759,
+                    73.55278950000735
+                ],
+                [
+                    72.97095999941627,
+                    71.95212743546206,
+                    73.45256451162723,
+                    76.01994865752425,
+                    73.7782252962094
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 228.51030304874104,
+            "scoreError" : 6.816164442408471,
+            "scoreConfidence" : [
+                221.69413860633256,
+                235.32646749114951
+            ],
+            "scorePercentiles" : {
+                "0.0" : 218.05321925693355,
+                "50.0" : 227.39181373351522,
+                "90.0" : 241.00345546949544,
+                "95.0" : 242.20954781050185,
+                "99.0" : 242.20954781050185,
+                "99.9" : 242.20954781050185,
+                "99.99" : 242.20954781050185,
+                "99.999" : 242.20954781050185,
+                "99.9999" : 242.20954781050185,
+                "100.0" : 242.20954781050185
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    240.1993939088245,
+                    227.39181373351522,
+                    218.05321925693355,
+                    224.2364530941704,
+                    222.8736662803655
+                ],
+                [
+                    242.20954781050185,
+                    232.86117752526428,
+                    231.14046059261312,
+                    227.84329832315683,
+                    231.90501924682312
+                ],
+                [
+                    228.04301290646237,
+                    226.12658002080224,
+                    224.3007107612255,
+                    226.03643890420867,
+                    224.43375336624774
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.insertSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 229.35465170663304,
+            "scoreError" : 3.4230266693155667,
+            "scoreConfidence" : [
+                225.93162503731747,
+                232.7776783759486
+            ],
+            "scorePercentiles" : {
+                "0.0" : 225.19299518104847,
+                "50.0" : 228.9467868131868,
+                "90.0" : 234.12757473678596,
+                "95.0" : 234.14385689534066,
+                "99.0" : 234.14385689534066,
+                "99.9" : 234.14385689534066,
+                "99.99" : 234.14385689534066,
+                "99.999" : 234.14385689534066,
+                "99.9999" : 234.14385689534066,
+                "100.0" : 234.14385689534066
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    225.87316040292708,
+                    228.9467868131868,
+                    226.8317315734567,
+                    228.91153016846732,
+                    225.73185251230194
+                ],
+                [
+                    229.31319201137302,
+                    225.19299518104847,
+                    234.11671996441615,
+                    233.3757222066648,
+                    226.91709861136323
+                ],
+                [
+                    234.14385689534066,
+                    230.16173187571923,
+                    230.91715272005172,
+                    233.31403998693543,
+                    226.5722046762427
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 19.156880040405394,
+            "scoreError" : 0.17506534615204034,
+            "scoreConfidence" : [
+                18.981814694253355,
+                19.331945386557432
+            ],
+            "scorePercentiles" : {
+                "0.0" : 18.894185852478838,
+                "50.0" : 19.24316527224027,
+                "90.0" : 19.312326734819177,
+                "95.0" : 19.32306776752832,
+                "99.0" : 19.32306776752832,
+                "99.9" : 19.32306776752832,
+                "99.99" : 19.32306776752832,
+                "99.999" : 19.32306776752832,
+                "99.9999" : 19.32306776752832,
+                "100.0" : 19.32306776752832
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    18.894185852478838,
+                    18.926623151870274,
+                    18.945012143279328,
+                    18.965260725434195,
+                    18.955960997357618
+                ],
+                [
+                    19.288279794624913,
+                    19.287586104874983,
+                    19.26578729429715,
+                    19.32306776752832,
+                    19.305166046346418
+                ],
+                [
+                    19.24316527224027,
+                    19.232268276734786,
+                    19.26287053402883,
+                    19.249555336972673,
+                    19.208411308012337
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 29.208377160462536,
+            "scoreError" : 0.2674101718560003,
+            "scoreConfidence" : [
+                28.940966988606537,
+                29.475787332318536
+            ],
+            "scorePercentiles" : {
+                "0.0" : 28.91147158956212,
+                "50.0" : 29.121744430660634,
+                "90.0" : 29.61881557376712,
+                "95.0" : 29.640875660230837,
+                "99.0" : 29.640875660230837,
+                "99.9" : 29.640875660230837,
+                "99.99" : 29.640875660230837,
+                "99.999" : 29.640875660230837,
+                "99.9999" : 29.640875660230837,
+                "100.0" : 29.640875660230837
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    29.45043282896403,
+                    29.458587200122544,
+                    29.640875660230837,
+                    29.44280401231842,
+                    29.604108849457972
+                ],
+                [
+                    29.020261504709836,
+                    29.247343368701817,
+                    29.011922761373725,
+                    29.20269400723034,
+                    29.03320228424775
+                ],
+                [
+                    28.91147158956212,
+                    28.919079923425272,
+                    29.09112355713288,
+                    28.97000542879987,
+                    29.121744430660634
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 26.098119511709914,
+            "scoreError" : 0.23593288174281762,
+            "scoreConfidence" : [
+                25.862186629967095,
+                26.334052393452733
+            ],
+            "scorePercentiles" : {
+                "0.0" : 25.708711357221084,
+                "50.0" : 26.15100435660342,
+                "90.0" : 26.349151220351516,
+                "95.0" : 26.37258408843975,
+                "99.0" : 26.37258408843975,
+                "99.9" : 26.37258408843975,
+                "99.99" : 26.37258408843975,
+                "99.999" : 26.37258408843975,
+                "99.9999" : 26.37258408843975,
+                "100.0" : 26.37258408843975
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    26.15100435660342,
+                    26.205340221584002,
+                    26.16072973269922,
+                    26.07155624208106,
+                    26.028408971182277
+                ],
+                [
+                    25.92569451328902,
+                    25.873682261077448,
+                    25.764449037217954,
+                    25.911884447162223,
+                    25.708711357221084
+                ],
+                [
+                    26.37258408843975,
+                    26.333529308292693,
+                    26.320036415126122,
+                    26.32396128414092,
+                    26.320220439531518
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 50.81530769264105,
+            "scoreError" : 0.34230988153831216,
+            "scoreConfidence" : [
+                50.472997811102736,
+                51.15761757417936
+            ],
+            "scorePercentiles" : {
+                "0.0" : 50.462073702163735,
+                "50.0" : 50.70203102850363,
+                "90.0" : 51.47538498670015,
+                "95.0" : 51.54663874313166,
+                "99.0" : 51.54663874313166,
+                "99.9" : 51.54663874313166,
+                "99.99" : 51.54663874313166,
+                "99.999" : 51.54663874313166,
+                "99.9999" : 51.54663874313166,
+                "100.0" : 51.54663874313166
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    51.14026835355002,
+                    50.81998209167598,
+                    50.923854954679705,
+                    50.70203102850363,
+                    50.462073702163735
+                ],
+                [
+                    51.54663874313166,
+                    50.7642416901866,
+                    50.72422932094382,
+                    50.64869267235267,
+                    50.60809900609299
+                ],
+                [
+                    51.42788248241247,
+                    50.56685535430761,
+                    50.69256864931721,
+                    50.70134453457717,
+                    50.50085280572052
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 257.11017357879297,
+            "scoreError" : 3.123066915616101,
+            "scoreConfidence" : [
+                253.98710666317686,
+                260.2332404944091
+            ],
+            "scorePercentiles" : {
+                "0.0" : 252.11555074875207,
+                "50.0" : 257.0529446329426,
+                "90.0" : 262.14740744911,
+                "95.0" : 263.3461082846158,
+                "99.0" : 263.3461082846158,
+                "99.9" : 263.3461082846158,
+                "99.99" : 263.3461082846158,
+                "99.999" : 263.3461082846158,
+                "99.9999" : 263.3461082846158,
+                "100.0" : 263.3461082846158
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    257.0529446329426,
+                    258.0960977598844,
+                    261.3482735587728,
+                    257.8926049822064,
+                    255.91874900194492
+                ],
+                [
+                    263.3461082846158,
+                    259.7678008727726,
+                    257.1725349997428,
+                    257.86873075137953,
+                    253.02914274870963
+                ],
+                [
+                    256.62179923017703,
+                    255.8747742810357,
+                    252.11555074875207,
+                    254.30703682229682,
+                    256.2404550066619
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 175.29327635739432,
+            "scoreError" : 3.259579282340347,
+            "scoreConfidence" : [
+                172.03369707505396,
+                178.55285563973467
+            ],
+            "scorePercentiles" : {
+                "0.0" : 170.21757349537037,
+                "50.0" : 175.70807358212102,
+                "90.0" : 178.7735550688511,
+                "95.0" : 179.0906202722063,
+                "99.0" : 179.0906202722063,
+                "99.9" : 179.0906202722063,
+                "99.99" : 179.0906202722063,
+                "99.999" : 179.0906202722063,
+                "99.9999" : 179.0906202722063,
+                "100.0" : 179.0906202722063
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    178.43881942759262,
+                    178.15897662652318,
+                    178.5621782666143,
+                    175.61171872585516,
+                    175.24963262301978
+                ],
+                [
+                    173.06569700955282,
+                    170.21757349537037,
+                    171.35376165998423,
+                    171.15609906209352,
+                    171.75564040119534
+                ],
+                [
+                    175.70807358212102,
+                    179.0906202722063,
+                    176.35992092268623,
+                    178.14471419410003,
+                    176.5257190920003
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 188.94052419529126,
+            "scoreError" : 1.7975643184435843,
+            "scoreConfidence" : [
+                187.14295987684767,
+                190.73808851373485
+            ],
+            "scorePercentiles" : {
+                "0.0" : 186.39435957653023,
+                "50.0" : 188.5745486121587,
+                "90.0" : 191.3959625972329,
+                "95.0" : 191.49274046415442,
+                "99.0" : 191.49274046415442,
+                "99.9" : 191.49274046415442,
+                "99.99" : 191.49274046415442,
+                "99.999" : 191.49274046415442,
+                "99.9999" : 191.49274046415442,
+                "100.0" : 191.49274046415442
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    187.53663121179162,
+                    190.67978331998629,
+                    191.33144401928521,
+                    191.49274046415442,
+                    190.37824188083
+                ],
+                [
+                    189.17295747578692,
+                    189.6166389836936,
+                    190.68859011517046,
+                    188.3500787253277,
+                    186.39435957653023
+                ],
+                [
+                    187.09784583723106,
+                    187.88683462969226,
+                    186.8101146977509,
+                    188.5745486121587,
+                    188.09705337997968
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 186.33392244499507,
+            "scoreError" : 7.474049683067049,
+            "scoreConfidence" : [
+                178.85987276192802,
+                193.80797212806212
+            ],
+            "scorePercentiles" : {
+                "0.0" : 176.51883397465315,
+                "50.0" : 189.76028576850095,
+                "90.0" : 193.4968003462759,
+                "95.0" : 194.4568612429027,
+                "99.0" : 194.4568612429027,
+                "99.9" : 194.4568612429027,
+                "99.99" : 194.4568612429027,
+                "99.999" : 194.4568612429027,
+                "99.9999" : 194.4568612429027,
+                "100.0" : 194.4568612429027
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    177.30998372398142,
+                    177.03248327137547,
+                    176.51883397465315,
+                    177.93720262624106,
+                    177.0293620109754
+                ],
+                [
+                    192.8567597485247,
+                    192.2985952005538,
+                    194.4568612429027,
+                    192.57476949740035,
+                    192.65859944517223
+                ],
+                [
+                    189.76028576850095,
+                    189.87780853649275,
+                    187.42301926608943,
+                    190.00953526371788,
+                    187.26473709834468
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 234.7361843526123,
+            "scoreError" : 4.769790612216828,
+            "scoreConfidence" : [
+                229.96639374039546,
+                239.50597496482914
+            ],
+            "scorePercentiles" : {
+                "0.0" : 224.92320483987046,
+                "50.0" : 234.9709309680451,
+                "90.0" : 241.21472284314427,
+                "95.0" : 242.91039931989312,
+                "99.0" : 242.91039931989312,
+                "99.9" : 242.91039931989312,
+                "99.99" : 242.91039931989312,
+                "99.999" : 242.91039931989312,
+                "99.9999" : 242.91039931989312,
+                "100.0" : 242.91039931989312
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    239.37760124461465,
+                    242.91039931989312,
+                    236.06512557832122,
+                    231.82232880522972,
+                    230.41063542530642
+                ],
+                [
+                    234.6588976958093,
+                    237.7462576074553,
+                    235.84960379227394,
+                    224.92320483987046,
+                    235.10330579716958
+                ],
+                [
+                    234.9709309680451,
+                    240.08427185864502,
+                    232.25939198290678,
+                    230.28536683093077,
+                    234.57544354271238
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.simpleJoin",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 366.7124775924694,
+            "scoreError" : 3.0925200466868494,
+            "scoreConfidence" : [
+                363.61995754578254,
+                369.8049976391562
+            ],
+            "scorePercentiles" : {
+                "0.0" : 362.01881624674195,
+                "50.0" : 366.09145991653855,
+                "90.0" : 371.66940452318227,
+                "95.0" : 371.7771933085502,
+                "99.0" : 371.7771933085502,
+                "99.9" : 371.7771933085502,
+                "99.99" : 371.7771933085502,
+                "99.999" : 371.7771933085502,
+                "99.9999" : 371.7771933085502,
+                "100.0" : 371.7771933085502
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    365.3645689025281,
+                    364.5327877815849,
+                    368.2442190882981,
+                    365.97216204347507,
+                    362.01881624674195
+                ],
+                [
+                    366.09145991653855,
+                    363.1961919668797,
+                    364.0580480524208,
+                    368.229652404448,
+                    367.6326748033233
+                ],
+                [
+                    367.31437082200836,
+                    364.8713579976649,
+                    369.78611521964206,
+                    371.597545332937,
+                    371.7771933085502
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 6.337662089878818,
+            "scoreError" : 0.019753463321237685,
+            "scoreConfidence" : [
+                6.31790862655758,
+                6.357415553200056
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.312165918908888,
+                "50.0" : 6.337322173271619,
+                "90.0" : 6.363485555449689,
+                "95.0" : 6.364121690764688,
+                "99.0" : 6.364121690764688,
+                "99.9" : 6.364121690764688,
+                "99.99" : 6.364121690764688,
+                "99.999" : 6.364121690764688,
+                "99.9999" : 6.364121690764688,
+                "100.0" : 6.364121690764688
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    6.364121690764688,
+                    6.360084065145718,
+                    6.363061465239689,
+                    6.358954991549231,
+                    6.353962624565719
+                ],
+                [
+                    6.314918911546068,
+                    6.320630251792786,
+                    6.337322173271619,
+                    6.340502002893703,
+                    6.337422240698821
+                ],
+                [
+                    6.322802257258137,
+                    6.320585801434469,
+                    6.3359591776222,
+                    6.322437775490541,
+                    6.312165918908888
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 7.724070961023654,
+            "scoreError" : 0.030654784691785952,
+            "scoreConfidence" : [
+                7.693416176331867,
+                7.75472574571544
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.681249024900186,
+                "50.0" : 7.729299644926876,
+                "90.0" : 7.766015833621114,
+                "95.0" : 7.771040565218135,
+                "99.0" : 7.771040565218135,
+                "99.9" : 7.771040565218135,
+                "99.99" : 7.771040565218135,
+                "99.999" : 7.771040565218135,
+                "99.9999" : 7.771040565218135,
+                "100.0" : 7.771040565218135
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    7.720351209509943,
+                    7.729299644926876,
+                    7.705267246905666,
+                    7.735614470655214,
+                    7.738684194723629
+                ],
+                [
+                    7.689070703404921,
+                    7.685345805769373,
+                    7.681249024900186,
+                    7.712607770973762,
+                    7.693429606709676
+                ],
+                [
+                    7.739706866447898,
+                    7.771040565218135,
+                    7.762666012556433,
+                    7.7515506507197065,
+                    7.74518064193339
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 7.802355595866614,
+            "scoreError" : 0.08720667578692239,
+            "scoreConfidence" : [
+                7.715148920079692,
+                7.889562271653537
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.686675435360095,
+                "50.0" : 7.8315171957962,
+                "90.0" : 7.891189142751106,
+                "95.0" : 7.896330823980506,
+                "99.0" : 7.896330823980506,
+                "99.9" : 7.896330823980506,
+                "99.99" : 7.896330823980506,
+                "99.999" : 7.896330823980506,
+                "99.9999" : 7.896330823980506,
+                "100.0" : 7.896330823980506
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    7.865773332557272,
+                    7.887761355264839,
+                    7.8782300203408635,
+                    7.896330823980506,
+                    7.881634756127356
+                ],
+                [
+                    7.818461571177719,
+                    7.812012523747625,
+                    7.849684176154025,
+                    7.832859917381912,
+                    7.8315171957962
+                ],
+                [
+                    7.6922262128379675,
+                    7.706836001344024,
+                    7.702198879521617,
+                    7.686675435360095,
+                    7.693131736407178
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 32.0591146267727,
+            "scoreError" : 0.6810609953278685,
+            "scoreConfidence" : [
+                31.37805363144483,
+                32.740175622100566
+            ],
+            "scorePercentiles" : {
+                "0.0" : 31.47757871676068,
+                "50.0" : 31.756896945061925,
+                "90.0" : 33.002807564906604,
+                "95.0" : 33.12666236476504,
+                "99.0" : 33.12666236476504,
+                "99.9" : 33.12666236476504,
+                "99.99" : 33.12666236476504,
+                "99.999" : 33.12666236476504,
+                "99.9999" : 33.12666236476504,
+                "100.0" : 33.12666236476504
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    32.876395760460774,
+                    32.86811298454581,
+                    32.92023769833432,
+                    33.12666236476504,
+                    32.76540675989148
+                ],
+                [
+                    31.803085647412004,
+                    31.756896945061925,
+                    31.47757871676068,
+                    31.489252622961143,
+                    31.51746245776814
+                ],
+                [
+                    31.83460529197545,
+                    31.72374571109532,
+                    31.61497647304295,
+                    31.565484252589847,
+                    31.546815714925646
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "SQLITE",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 149.53407612305787,
+            "scoreError" : 2.46460649105219,
+            "scoreConfidence" : [
+                147.06946963200568,
+                151.99868261411007
+            ],
+            "scorePercentiles" : {
+                "0.0" : 145.75417437183,
+                "50.0" : 150.10842739635555,
+                "90.0" : 152.5519951267399,
+                "95.0" : 152.67842119083969,
+                "99.0" : 152.67842119083969,
+                "99.9" : 152.67842119083969,
+                "99.99" : 152.67842119083969,
+                "99.999" : 152.67842119083969,
+                "99.9999" : 152.67842119083969,
+                "100.0" : 152.67842119083969
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    149.38335536103725,
+                    152.67842119083969,
+                    151.21542728399916,
+                    150.85822579574597,
+                    150.71917334820353
+                ],
+                [
+                    145.75417437183,
+                    147.14137498160846,
+                    148.97966051902392,
+                    146.53335910209822,
+                    148.00062113363919
+                ],
+                [
+                    146.4490122719152,
+                    150.43702106023227,
+                    152.4677110840067,
+                    152.28517694533272,
+                    150.10842739635555
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "JDBC",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 1120.7828989665754,
+            "scoreError" : 198.78792429851478,
+            "scoreConfidence" : [
+                921.9949746680606,
+                1319.5708232650902
+            ],
+            "scorePercentiles" : {
+                "0.0" : 844.9141037512674,
+                "50.0" : 1125.2742632763277,
+                "90.0" : 1367.8448723788622,
+                "95.0" : 1388.0722028864834,
+                "99.0" : 1388.0722028864834,
+                "99.9" : 1388.0722028864834,
+                "99.99" : 1388.0722028864834,
+                "99.999" : 1388.0722028864834,
+                "99.9999" : 1388.0722028864834,
+                "100.0" : 1388.0722028864834
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    845.6802614578048,
+                    997.8536791059669,
+                    1125.2742632763277,
+                    1246.9611336658354,
+                    1354.3599853737812
+                ],
+                [
+                    844.9141037512674,
+                    991.0519990091161,
+                    1119.2802119516562,
+                    1246.6671917227625,
+                    1335.6312462606838
+                ],
+                [
+                    873.7354090511969,
+                    1015.8413217550274,
+                    1152.9807945584505,
+                    1273.4396806722689,
+                    1388.0722028864834
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 1112.9962860723574,
+            "scoreError" : 199.73848782282042,
+            "scoreConfidence" : [
+                913.257798249537,
+                1312.7347738951778
+            ],
+            "scorePercentiles" : {
+                "0.0" : 836.8513648535564,
+                "50.0" : 1125.3057126462647,
+                "90.0" : 1348.5934333523912,
+                "95.0" : 1348.9521300242784,
+                "99.0" : 1348.9521300242784,
+                "99.9" : 1348.9521300242784,
+                "99.99" : 1348.9521300242784,
+                "99.999" : 1348.9521300242784,
+                "99.9999" : 1348.9521300242784,
+                "100.0" : 1348.9521300242784
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    849.4391143196874,
+                    991.6750003965893,
+                    1114.149497771836,
+                    1272.98291904277,
+                    1346.4372714054928
+                ],
+                [
+                    841.4996272298889,
+                    995.8755279824736,
+                    1132.642433975085,
+                    1247.2603404839112,
+                    1348.9521300242784
+                ],
+                [
+                    836.8513648535564,
+                    997.337053450339,
+                    1125.3057126462647,
+                    1246.1819952653875,
+                    1348.3543022377999
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KAPPER-NO-AUTOMAP",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 1121.654879038815,
+            "scoreError" : 198.40399242581142,
+            "scoreConfidence" : [
+                923.2508866130034,
+                1320.0588714646262
+            ],
+            "scorePercentiles" : {
+                "0.0" : 836.0301130245779,
+                "50.0" : 1129.519834688347,
+                "90.0" : 1359.6323218590207,
+                "95.0" : 1382.2678018242123,
+                "99.0" : 1382.2678018242123,
+                "99.9" : 1382.2678018242123,
+                "99.99" : 1382.2678018242123,
+                "99.999" : 1382.2678018242123,
+                "99.9999" : 1382.2678018242123,
+                "100.0" : 1382.2678018242123
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    872.9399104555769,
+                    1026.3602352216749,
+                    1159.6836516697588,
+                    1281.1456484755317,
+                    1382.2678018242123
+                ],
+                [
+                    836.0301130245779,
+                    996.9660899122807,
+                    1129.519834688347,
+                    1241.5472460278054,
+                    1338.5464526231262
+                ],
+                [
+                    843.7683876139048,
+                    996.8917276714513,
+                    1129.1641153759313,
+                    1245.4499691158157,
+                    1344.5420018822265
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "HIBERNATE",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 245.425726072153,
+            "scoreError" : 6.599079820491762,
+            "scoreConfidence" : [
+                238.82664625166123,
+                252.02480589264476
+            ],
+            "scorePercentiles" : {
+                "0.0" : 234.73452567834005,
+                "50.0" : 246.05716297608504,
+                "90.0" : 255.828596273679,
+                "95.0" : 258.0329995355558,
+                "99.0" : 258.0329995355558,
+                "99.9" : 258.0329995355558,
+                "99.99" : 258.0329995355558,
+                "99.999" : 258.0329995355558,
+                "99.9999" : 258.0329995355558,
+                "100.0" : 258.0329995355558
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    258.0329995355558,
+                    248.04119182499133,
+                    250.7313235721807,
+                    238.79788270691054,
+                    240.19482688058412
+                ],
+                [
+                    247.46649044838168,
+                    246.18228761323357,
+                    247.94342966231963,
+                    246.05716297608504,
+                    245.60016827111986
+                ],
+                [
+                    254.3589940990945,
+                    243.05651611335244,
+                    239.8250928057554,
+                    240.36299889439024,
+                    234.73452567834005
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "net.samyn.kapper.benchmark.KapperBenchmark.updateSingleRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/lib64/graalvm/graalvm-java21/bin/java",
+        "jvmArgs" : [
+            "-XX:ThreadPriorityPolicy=1",
+            "-XX:+UnlockExperimentalVMOptions",
+            "-XX:+EnableJVMCIProduct",
+            "-XX:-UnlockExperimentalVMOptions"
+        ],
+        "jdkVersion" : "21.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.2+13-LTS-jvmci-23.1-b30",
+        "warmupIterations" : 5,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "databaseType" : "POSTGRESQL",
+            "library" : "KTORM",
+            "rows" : "1000"
+        },
+        "primaryMetric" : {
+            "score" : 1106.325509398798,
+            "scoreError" : 193.96344420293036,
+            "scoreConfidence" : [
+                912.3620651958677,
+                1300.2889536017283
+            ],
+            "scorePercentiles" : {
+                "0.0" : 839.7150942065491,
+                "50.0" : 1126.4492421716602,
+                "90.0" : 1337.061828382932,
+                "95.0" : 1339.6718529332977,
+                "99.0" : 1339.6718529332977,
+                "99.9" : 1339.6718529332977,
+                "99.99" : 1339.6718529332977,
+                "99.999" : 1339.6718529332977,
+                "99.9999" : 1339.6718529332977,
+                "100.0" : 1339.6718529332977
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    839.7150942065491,
+                    990.9517311274025,
+                    1120.9516220578346,
+                    1239.2310845105328,
+                    1335.3218120160213
+                ],
+                [
+                    843.6239382591093,
+                    981.6316423243031,
+                    1134.528073275862,
+                    1232.7798880670612,
+                    1339.6718529332977
+                ],
+                [
+                    846.7759434377646,
+                    991.1046030519224,
+                    1126.4492421716602,
+                    1237.689431930693,
+                    1334.4566816119561
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
