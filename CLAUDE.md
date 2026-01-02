@@ -142,12 +142,18 @@ Completed! All phases of the automated benchmark pipeline are fully implemented 
 - **Keep for reuse**: `./setup/run-benchmarks.sh 1.6.1 --keep-instance`
 - **Monitor instances**: `./setup/list-all-instances.sh`
 - **Emergency cleanup**: `./setup/stop-all-instances.sh`
+- **Clean orphaned volumes**: `./setup/cleanup-orphaned-volumes.sh` (prevents ongoing costs)
 
 ### SSH Disconnection Protection Commands
 - **Enhanced monitoring**: `./oci/monitor-benchmark.sh` (continuous monitoring)
 - **Reconnect to session**: `./oci/monitor-benchmark.sh --reconnect` (after disconnection)
 - **Single status check**: `./oci/monitor-benchmark.sh --once` (one-time check)
 - **Manual tmux reconnect**: `ssh benchmark@<ip> 'tmux attach -t kapper-benchmark'`
+
+### Cost Management Commands
+- **Check for cost-generating volumes**: `./setup/cleanup-orphaned-volumes.sh`
+- **Monitor all instances and costs**: `./setup/list-all-instances.sh`
+- **Immediate cleanup when done**: `./setup/stop-all-instances.sh`
 
 ### Environment Setup
 - **Java**: Eclipse Temurin JDK 21 LTS (free license, production-ready)
@@ -234,6 +240,8 @@ Benchmark results contain columns: Benchmark, DatabaseType, Library, Rows, Mode,
 - **Intelligent SSH testing** with multiple retry attempts and fallback strategies
 - **Smart instance cleanup** automatically terminates multiple instances to prevent resource waste
 - **Cost control** ensures only one instance runs at a time across all regions
+- **Block volume cost optimization** uses 30GB boot volumes (down from 50GB) with enhanced cleanup verification
+- **Orphaned volume detection** automatic cleanup of volumes that may generate costs after instance termination
 - **Python pipeline integration** eliminates code duplication between local and cloud execution
 - **Tmux session persistence** allows benchmarks to survive network interruptions (✅)
 - **Intelligent reconnection** automatically detects and reconnects to active sessions (✅)
