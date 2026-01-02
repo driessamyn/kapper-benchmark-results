@@ -73,7 +73,7 @@ You'll need:
 - **OCPUs**: 4 (free tier maximum)
 - **Memory**: 24GB (free tier maximum)
 - **OS**: Oracle Linux Cloud Developer 8.9 ARM64 (pre-installed JDK)
-- **Storage**: Boot volume with auto-delete
+- **Storage**: 30GB boot volume with auto-delete (cost-optimized)
 
 ### Software Stack
 - **Java**: GraalVM JDK 21 LTS (pre-installed in Oracle Linux Cloud Developer)
@@ -101,6 +101,7 @@ You'll need:
 | `monitor-benchmark.sh` | Enhanced monitoring with reconnection | `./monitor-benchmark.sh [--reconnect\|--once]` |
 | `list-all-instances.sh` | Multi-region instance monitoring | `./setup/list-all-instances.sh` |
 | `stop-all-instances.sh` | Emergency cleanup across regions | `./setup/stop-all-instances.sh [--remove-terminated]` |
+| `cleanup-orphaned-volumes.sh` | Remove orphaned volumes that generate costs | `./setup/cleanup-orphaned-volumes.sh` |
 
 ### Benchmark Options
 
@@ -140,6 +141,9 @@ You'll need:
 
 # Force cleanup of terminated instances (optional)
 ./setup/stop-all-instances.sh --remove-terminated
+
+# Clean up orphaned volumes that may generate costs
+./setup/cleanup-orphaned-volumes.sh
 ```
 
 ## 🎯 Usage Workflows
@@ -210,6 +214,22 @@ ssh -i ~/.ssh/kapper-benchmark benchmark@<ip> 'tail -f ~/benchmark_output.log'
 
 # Stop all instances when done
 ./setup/stop-all-instances.sh
+
+# Clean up any orphaned volumes
+./setup/cleanup-orphaned-volumes.sh
+```
+
+### Cost Management
+
+```bash
+# Check for volumes that may be generating charges
+./setup/cleanup-orphaned-volumes.sh
+
+# The script will:
+# 1. Scan all accessible regions for orphaned volumes
+# 2. Show volume details (name, size, creation date) 
+# 3. Ask for confirmation before deletion
+# 4. Estimate cost savings from cleanup
 ```
 
 ## 🔧 Configuration Files
@@ -246,29 +266,43 @@ Results are organized in the main results directory:
 
 ## 💰 Cost Management
 
-### Free Tier Benefits
-- **Compute**: VM.Standard.A1.Flex up to 4 OCPUs (Always Free)
-- **Memory**: Up to 24GB RAM (Always Free)
-- **Storage**: Boot volumes (included in free tier)
-- **Network**: Egress included in free tier
+### Free Tier Benefits & Limitations
+- **✅ Compute**: VM.Standard.A1.Flex up to 4 OCPUs (Always Free)
+- **✅ Memory**: Up to 24GB RAM (Always Free) 
+- **⚠️ Storage**: Boot volumes generate small charges (~$0.01-0.02 per day)
+- **✅ Network**: Egress included in free tier
+
+### Block Volume Cost Optimization
+- **30GB boot volumes**: Reduced from 50GB default (40% cost savings)
+- **Enhanced cleanup verification**: Automatically checks for orphaned volumes
+- **Orphaned volume detection**: `cleanup-orphaned-volumes.sh` removes cost-generating volumes
 
 ### Cost Protection Features
-- **Automatic termination**: Instances terminate after benchmark completion
+- **Automatic termination**: Instances terminate after benchmark completion with `--preserve-boot-volume false`
+- **Enhanced volume cleanup**: Verifies volumes are deleted after instance termination
 - **IP-restricted access**: Security groups prevent unauthorized usage
 - **Multi-region capacity**: Finds free capacity automatically
 - **Emergency cleanup**: `stop-all-instances.sh` terminates everything immediately
 
-### Monitoring Costs
+### Cost Monitoring & Cleanup
 ```bash
-# Check current instances
+# Check current instances and estimated costs
 ./setup/list-all-instances.sh
 
 # Emergency stop all instances
 ./setup/stop-all-instances.sh
 
+# Clean up orphaned volumes (prevents ongoing charges)
+./setup/cleanup-orphaned-volumes.sh
+
 # OCI Console monitoring
 # Navigate to: Billing & Cost Management → Cost Analysis
 ```
+
+### Expected Costs
+- **Typical benchmark run**: ~$0.01 for 30GB volume for 1-2 hours
+- **Forgotten instance**: ~$0.01-0.02 per day for running volume
+- **Cost elimination**: Not possible with ARM instances (require block volumes)
 
 ## 🔍 Monitoring & Troubleshooting
 
@@ -293,6 +327,7 @@ The system automatically finds ARM capacity across regions:
 | SSH connection fails | Instance still starting | Wait 2-3 minutes for cloud-init |
 | Prerequisites fail | No OCI permissions | Check compartment permissions |
 | Network setup fails | Existing resources | Delete existing VCNs or use different names |
+| Unexpected charges | Orphaned volumes | Run `./setup/cleanup-orphaned-volumes.sh` |
 
 ### Debug Commands
 
@@ -305,6 +340,9 @@ ssh -i ~/.ssh/kapper-benchmark benchmark@<ip> 'sudo tail -f /var/log/cloud-init-
 
 # Monitor benchmark execution
 ssh -i ~/.ssh/kapper-benchmark benchmark@<ip> 'cd ~/kapper-benchmarks && tail -f *.log'
+
+# Check for orphaned volumes generating costs
+./setup/cleanup-orphaned-volumes.sh
 ```
 
 ## 🛡️ Security Features

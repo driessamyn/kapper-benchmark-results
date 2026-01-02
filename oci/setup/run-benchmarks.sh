@@ -507,6 +507,7 @@ for AD in "${ADS[@]}"; do
         --ssh-authorized-keys-file "${SSH_KEY_PATH}.pub" \
         --user-data-file /tmp/cloud-init.yaml \
         --assign-public-ip true \
+        --boot-volume-size-in-gbs 30 \
         --wait-for-state RUNNING \
         --query 'data.id' \
         --raw-output 2>/dev/null); then
@@ -1090,6 +1091,25 @@ if [ "$KEEP_INSTANCE" = false ]; then
         --preserve-boot-volume false \
         --force >/dev/null 2>&1; then
         echo "✅ Instance terminated"
+        
+        # Wait a moment to ensure volume deletion is initiated
+        echo "⏳ Ensuring volume deletion completes..."
+        sleep 5
+        
+        # Verify no orphaned volumes remain
+        ORPHANED_VOLUMES=$(oci bv volume list \
+            --region "$REGION" \
+            --compartment-id "$COMPARTMENT_ID" \
+            --lifecycle-state AVAILABLE \
+            --query 'data[?contains("display-name", `kapper-benchmark`) || contains("display-name", `'"$VERSION"'`)]' \
+            --raw-output 2>/dev/null || echo "[]")
+        
+        if [ "$ORPHANED_VOLUMES" != "[]" ] && [ -n "$ORPHANED_VOLUMES" ]; then
+            echo "🔍 Found potential orphaned volumes, checking..."
+            echo "$ORPHANED_VOLUMES" | jq -r '.[] | "   Volume: " + ."display-name" + " (ID: " + .id[0:20] + "...)"' 2>/dev/null || true
+        else
+            echo "✅ No orphaned volumes detected"
+        fi
     else
         echo "⚠️  Failed to terminate instance automatically"
         echo "   Manually terminate: $INSTANCE_OCID"
